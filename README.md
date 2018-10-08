@@ -1,0 +1,8 @@
+# PS workshop
+This repo is only used for PS guys to upload a specific html which contains rtclauncher divs
+
+1. Create an github account
+2. Send credentials to me
+3. You will get access to this repo
+4. Create your own html file with your luware name (flaib.html)
+5. Paste the divs you created into your file
