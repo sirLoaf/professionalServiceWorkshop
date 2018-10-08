@@ -1,0 +1,47 @@
+Title         : RTCLauncher Workshop
+Author        : flaib
+Logo          : True
+
+[TOC]
+[TITLE]
+
+# Github 
+* Go to [https://github.com/join?source=header-home](https://github.com/join?source=header-home)
+* Create a new account
+* Forward your name to Fabio
+* Create a new html file with your name under the folder /docs
+* Copy the boilerplate from example.html
+* Have a look at the flaib.html file
+
+# LUCS
+* Create a LUCS service with two agents behind
+* Test it quickly with your own Skype for Business client
+* copy the sip address
+
+# RTCLauncher
+* Create a new tenant 
+ * use your name
+ * create a new domain 
+   * name it with your name
+ * create a new site 
+   * name it
+ * go to contacts
+    * add your created LUCS service
+    * make sure its marked as **UCMA enpoint**
+  * go to sites
+    * add you contact to the site (not group)
+    * extract the divs by clicking on the green button
+    * add the divs to your html file
+    * save it
+
+# Testing
+* Go to [https://sirloaf.github.io/professionalServiceWorkshop/yourname.html](https://sirloaf.github.io/professionalServiceWorkshop/yourname.html)
+* Open the developer console (F12)
+* Check the error message
+* Your contact will not be displayed because of a security check
+
+# Fixing
+* Log into the rtclauncher admin
+* Go to domains
+* Add **sirloaf.github.io** to the URLs List so that it will not be blocked anymore
+
