@@ -60,5 +60,6 @@ Logo          : True
 
 * Audio and Video will only work if your test device has an audio and video device
 * If you want to test A/V, make sure you test it with a colleague 
+* **Will not work** because the PS environment hasn't a running Edge
 
 
