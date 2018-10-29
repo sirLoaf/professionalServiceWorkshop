@@ -1,20 +1,34 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Fabio RTCLauncher with tag mngr</title>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N6KMG8R');</script>
-<!-- End Google Tag Manager -->
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6KMG8R"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<head>
+
+</head>
+<body>
+  <script>
+    //create div
+    var div = document.createElement('div');
+    div.setAttribute('contact-url','/api/8e10ee520a3ce811945700155d218659/sites/2775672d-7583-e811-9105-08dce072696b/contacts/26e97e3e-7583-e811-9105-08dce072696b');
+    div.setAttribute('ng-jq', 'jQueryLuware');
+    div.setAttribute('rl-site-contact');
+    document.body.appendChild(div);
+
+    (function(d, s, id){
+      var css, rtclcss=d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      css = d.createElement(s); css.id = id;
+      css.src = "https://rtclauncher.dev.luware.com/Content/rtc-launcher.css";
+      rtclcss.parentNode.insertBefore(js, rtclcss);
+    }(document, 'link', 'rtclauncher-css'));
+
+    (function(d, s, id){
+      var js, rtcljs=d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "https://rtclauncher.dev.luware.com/Content/rtc-launcher.js";
+      rtcljs.parentNode.insertBefore(js, rtcljs);
+    }(document, 'script', 'rtclauncher-jsdsk'));
+
+    rtclauncher.bootstrap("https://rtclauncherapi.dev.luware.com");
+  </script>
 </body>
+
 </html>
