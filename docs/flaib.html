@@ -8,23 +8,23 @@
     var div = document.createElement('div');
     div.setAttribute('contact-url','/api/8e10ee520a3ce811945700155d218659/sites/2775672d-7583-e811-9105-08dce072696b/contacts/26e97e3e-7583-e811-9105-08dce072696b');
     div.setAttribute('ng-jq', 'jQueryLuware');
-    div.setAttribute('rl-site-contact',null);
+    div.setAttribute('rl-site-contact','');
     document.body.appendChild(div);
 
     (function(d, s, id){
-      var css, rtclcss=d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) {return;}
-      css = d.createElement(s); css.id = id;
+      var css = d.createElement(s);
       css.href = "https://rtclauncher.dev.luware.com/Content/rtc-launcher.css";
-      rtclcss.parentNode.insertBefore(css, rtclcss);
+      css.id = id;
+      d.head.appendChild(css)
     }(document, 'link', 'rtclauncher-css'));
 
     (function(d, s, id){
-      var js, rtcljs=d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) {return;}
-      js = d.createElement(s); js.id = id;
+      if(d.getElementById(id)) {return;}
+      var js = d.createElement(s);
       js.src = "https://rtclauncher.dev.luware.com/Content/rtc-launcher.js";
-      rtcljs.parentNode.insertBefore(js, rtcljs);
+      js.id = id;
+      d.body.appendChild(js);
     }(document, 'script', 'rtclauncher-jsdsk'));
 
     rtclauncher.bootstrap("https://rtclauncherapi.dev.luware.com");
