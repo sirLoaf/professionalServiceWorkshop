@@ -19,17 +19,11 @@
       css.id = id;
       d.head.appendChild(css)
     }(document, 'link', 'rtclauncher-css'));
-
-    (function(d, s, id){
-      if(d.getElementById(id)) {return;}
-      var js = d.createElement(s);
-      js.src = "https://rtclauncher.dev.luware.com/Content/rtc-launcher.js";
-      js.id = id;
-      d.body.appendChild(js);
-      js.onload = function () {
-        rtclauncher.bootstrap("https://rtclauncherapi.dev.luware.com");
-      };
-    }(document, 'script', 'rtclauncher-jsdsk'));
+   
+    (funtion(r,t,c,l,j,s){r[l]=r[l]||{init:function(){r[l].q=arguments}};
+      j = t.createElement(c); s = t.getElementsByTagName(c)[0]; j.async=1;
+      j.src='https://rtclauncher.dev.luware.com/Content/rtc-launcher.js';s.parentNode.insertBefore(j,s);})
+      (window,document,'script','RTCLauncher');
 
   </script>
 </body>
