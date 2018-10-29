@@ -15,6 +15,7 @@
       if (d.getElementById(id)) {return;}
       var css = d.createElement(s);
       css.href = "https://rtclauncher.dev.luware.com/Content/rtc-launcher.css";
+      css.setAttribute('rel', 'stylesheet');
       css.id = id;
       d.head.appendChild(css)
     }(document, 'link', 'rtclauncher-css'));
