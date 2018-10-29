@@ -21,25 +21,19 @@
     }(document, 'link', 'rtclauncher-css'));
    
     (function (r, t, c, l, j, s) {
-    	r[l]=r[l] || {
-		bootstrap: function() {
-			r[l].q = arguments
-		}
-	}
-	j = t.createElement(c);
+    	j = t.createElement(c);
 	s = t.getElementsByTagName(c)[0];
 	j.async = 1;
     	j.id=l;
 	j.src = 'https://rtclauncher.dev.luware.com/Content/rtc-launcher.js';
+	j.onload = j.onreadystatechange = function(){
+		var rs=this.readyState;
+		if (rs && rs != 'complete' && rs != 'loaded') return;
+      		try { rtclauncher.bootstrap("https://rtclauncherapi.dev.luware.com"); } catch (e) {}
+	}
 	s.parentNode.insertBefore(j, s);
 })
 (window, document, 'script', 'rtclauncher');
-rtclauncher.bootstrap("https://rtclauncherapi.dev.luware.com", function(bootstrapResult){
-	if(boostrapResult.success){
-		console.log("rtc bootstrap successful");
-	}
-});
-
   </script>
 </body>
 
