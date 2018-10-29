@@ -34,7 +34,11 @@
 	s.parentNode.insertBefore(j, s);
 })
 (window, document, 'script', 'rtclauncher');
-rtclauncher.bootstrap("https://rtclauncherapi.dev.luware.com");
+rtclauncher.bootstrap("https://rtclauncherapi.dev.luware.com", function(bootstrapResult){
+	if(boostrapResult.success){
+		console.log("rtc bootstrap successful");
+	}
+};
 
   </script>
 </body>
