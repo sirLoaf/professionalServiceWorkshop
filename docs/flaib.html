@@ -24,9 +24,10 @@
 	j = t.createElement(c);
 	s = t.getElementsByTagName(c)[0];
 	j.async = 1;
+    	j.id=l;
 	j.src = 'https://rtclauncher.dev.luware.com/Content/rtc-launcher.js';
 	s.parentNode.insertBefore(j, s);
-	l.bootstrap("https://rtclauncherapi.dev.luware.com");
+	    c.onload=function(){rtclauncher.bootstrap("https://rtclauncherapi.dev.luware.com");
 })
 (window, document, 'script', 'rtclauncher');
 
