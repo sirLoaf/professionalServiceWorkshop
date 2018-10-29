@@ -25,9 +25,11 @@
       js.src = "https://rtclauncher.dev.luware.com/Content/rtc-launcher.js";
       js.id = id;
       d.body.appendChild(js);
+      js.onload = function () {
+        rtclauncher.bootstrap("https://rtclauncherapi.dev.luware.com");
+      };
     }(document, 'script', 'rtclauncher-jsdsk'));
 
-    rtclauncher.bootstrap("https://rtclauncherapi.dev.luware.com");
   </script>
 </body>
 
