@@ -20,20 +20,20 @@
       d.head.appendChild(css)
     }(document, 'link', 'rtclauncher-css'));
    
-    (function (r, t, c, l, j, s) {
-    	j = t.createElement(c);
-	s = t.getElementsByTagName(c)[0];
-	j.async = 1;
-    	j.id=l;
-	j.src = 'https://rtclauncher.dev.luware.com/Content/rtc-launcher.js';
-	j.onload = j.onreadystatechange = function(){
+    (function (l, u, w, a, r, e) {
+    var js = u.createElement(w);
+	e = u.getElementsByTagName(w)[0];
+	js.async = 1;
+    js.id=a;
+	js.src = 'https://rtclauncher.dev.luware.com/Content/rtc-launcher.js';
+	js.onload = js.onreadystatechange = function(){
 		var rs=this.readyState;
 		if (rs && rs != 'complete' && rs != 'loaded') return;
-      		try { rtclauncher.bootstrap("https://rtclauncherapi.dev.luware.com"); } catch (e) {}
+      		try { rtclauncher.bootstrap(r); } catch (e) {}
 	}
-	s.parentNode.insertBefore(j, s);
+	e.parentNode.insertBefore(js, e);
 })
-(window, document, 'script', 'rtclauncher');
+(window, document, 'script', 'rtclauncher', "https://rtclauncherapi.dev.luware.com");
   </script>
 </body>
 
